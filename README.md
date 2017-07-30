@@ -1,4 +1,4 @@
-#TPG Array Project <br />
+#Array Mainpulation Project<br />
 Source code is under : ArrayMaipulator/src/arraymaniulator <br />
 Unit Testers are under :ArrayManipulator/test/arraymanipulator <br />
 Main method is at : ArrayMaipulator/src/arraymaniulator/Main.java <br />
