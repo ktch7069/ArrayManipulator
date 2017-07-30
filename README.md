@@ -7,13 +7,13 @@ Array Mainpulation Project
 3.Main method is at : ArrayMaipulator/src/arraymaniulator/Main.java 
 
 #List of Classes 
-1.ArrayManipulator.java (abstract superclass) <br />
-2.ArrayReverser.java (extends ArrayManipulator)<br />
-3.ArrayShuffler.java (extends ArrayManipulator)<br />
-4.Engine.java <br />
-5.Main.java <br />
-6.ArrayReverserTest.java <br />
-7.ArrayShufflerTest.java <br />
+1.ArrayManipulator.java (abstract superclass)
+2.ArrayReverser.java (extends ArrayManipulator)
+3.ArrayShuffler.java (extends ArrayManipulator)
+4.Engine.java 
+5.Main.java 
+6.ArrayReverserTest.java 
+7.ArrayShufflerTest.java
 
 #Highlights
 1.Use abstract super classe and polymorphic method call to concrete classes 
