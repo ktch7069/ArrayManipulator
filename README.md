@@ -19,5 +19,6 @@ Main method is at : ArrayMaipulator/src/arraymaniulator/Main.java <br />
   a. User interaction<br />
   b. Getting input<br />
   c. Display output<br />
-  d. Interacting with data classes<br />
+  d. Instantiating objects of data classes
+  e. Interact with dataclass objects<br />
   </pre>
