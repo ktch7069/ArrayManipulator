@@ -14,8 +14,8 @@ Main method is at : ArrayMaipulator/src/arraymaniulator/Main.java <br />
 
 #Highlights <br />
 1.Use abstract super classe and polymorphic method call to concrete classes <br />
-2.A separate Engine class to handle program logic such as:
-  a.User interaction
-  b.Getting input
-  c.Display output
-  d.Interacting with data classes
+2.A separate Engine class to handle program logic such as: <br />
+  a.User interaction<br />
+  b.Getting input<br />
+  c.Display output<br />
+  d.Interacting with data classes<br />
