@@ -1,12 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package arraymanipulator;
 import java.util.Random;
 /**
- *
+ * ArrayShuffler Class
+ * Concrete class for abstract ArrayManipulator class
+ * Object of this class randomly shuffle a given char array
  * @author tchungk
  */
 public class ArrayShuffler extends ArrayManipulator {

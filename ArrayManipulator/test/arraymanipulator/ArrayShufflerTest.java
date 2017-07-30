@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package arraymanipulator;
 
 import java.util.Arrays;
@@ -14,33 +9,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * Tester for ArrayShuffler class
  * @author tchungk
  */
 public class ArrayShufflerTest {
-    
-    public ArrayShufflerTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
+   
     /**
      * Test of runAlgorithm method, of class ArrayShuffler.
      * The  should be different from input
+     * @param none
      */
     @Test
     public void testRunAlgorithm() {
@@ -53,15 +30,16 @@ public class ArrayShufflerTest {
         shuffle.setData(testString);
         shuffle.runAlgorithm();
         String result =shuffle.getData();
-         
-        String resultString = new String(result);
+        
+        //convertResult to char array
+        char[] resultArray = result.toCharArray();
         char[] testStringToArray = testString.toCharArray();
         
         System.out.println("The original string is : "+testString);
-        System.out.println("The shuffled string is : "+resultString);
+        System.out.println("The shuffled string is : "+result);
         
         //The two results are supposed to be different after shuffled
-        assertFalse(Arrays.equals(result, testStringToArray));
+        assertFalse(Arrays.equals(resultArray, testStringToArray));
        
     }
      

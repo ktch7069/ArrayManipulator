@@ -9,12 +9,11 @@ package arraymanipulator;
  * Main method as the entry point
  * @author tchungk
  */
-public class ArrayTestDriver {
+public class Main {
     
      public static void main(String[] args) {
          
          Engine anEngine = new Engine();
-         anEngine.run();
-        
+         anEngine.run(); 
     }
 }

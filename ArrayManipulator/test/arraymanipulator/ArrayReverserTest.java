@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package arraymanipulator;
 
 import org.junit.After;
@@ -13,30 +8,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * Tester for ArrayReverser class
  * @author tchungk
  */
 public class ArrayReverserTest {
     
-    public ArrayReverserTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     /**
      * ArrayReverser class
      * Test of runAlgorithm method- normal case
@@ -48,17 +24,20 @@ public class ArrayReverserTest {
         
         String testString ="Kai 1";
         String expectedResult=new String("1 iaK");
-        
         ArrayReverser reverse=new ArrayReverser();
         reverse.setData(testString);
         reverse.runAlgorithm();
-        char[] result =reverse.getData();
+        String result = reverse.getData();
+        
+        //convert resuts,testString to array
+        char[] resultArray =result.toCharArray();
+        char[] testStringToArray =testString.toCharArray();
         
         //converting char[] to string
         String resultString= new String(result);
         System.out.println("The original string is : "+testString);
         System.out.println("The reversed string is : "+resultString);
-        assertEquals(expectedResult,resultString);
+        assertEquals(result,expectedResult);
     }
     
     

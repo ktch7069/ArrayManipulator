@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * Engine class: A class reads input, create
- * necessary object and provide user interaction
+ * necessary object and provides user interaction
  * @author tchungk
  */
 public class Engine {
@@ -22,6 +22,9 @@ public class Engine {
     private ArrayReverser reverse;
     private ArrayShuffler shuffler;
     
+    //for displaying debugging messages only
+    private boolean debug =false;
+    
     public Engine(){
         
         reverse = new ArrayReverser();
@@ -31,27 +34,33 @@ public class Engine {
 
     public void run(){
         
-        System.out.println("****Welcome to Kai's String Maninpulator!****");
+        System.out.println("****Welcome to Kai's String Manipulator!****");
         Scanner in = new Scanner(System.in);
         
         //Loop over to get a line of input
         while(terminate==false){
+            //restting this flag back to false so we can enter 
+            //algorithm choice menu
+            selectionDone=false;
             
-            System.out.println("Please enter a line of string follow by enter (enter 0 to quit) :");
-            this.input = in.next();
-            
+            System.out.print("Please enter a line of string and press enter (enter 0 to quit): ");
+            this.input = in.nextLine();
+           
+            //Debugging message
+            if(debug==true){
+                System.out.println("DEBUG:Input is: "+input);
+            }
             //when user wants to go home....
             if (input.equals(exit)){
                 terminate=true;
                 break;
             }
-            //now we loop over for user to choose reverse or shuffle
+            //now we loop over prompting user to choose reverse or shuffle
             else{
-                
                 while(selectionDone == false){
                     
-                    System.out.println("Enter 1 to reverse this string, 2 to shuffle string (enter 0 to quit)");
-                    this.selection=in.next();
+                    System.out.print("Enter 1 to reverse this string, 2 to shuffle string (enter 0 to quit): ");
+                    this.selection=in.nextLine();
                     
                     if(selection.equals(selectReverse)){
                         reverse.setData(input);
@@ -75,8 +84,8 @@ public class Engine {
         
         reverse=null;
         shuffler=null;
-        
-        System.out.println("***Good bye!****");
+        System.out.println(" ");
+        System.out.println("***Good Bye!****");
         System.exit(0);
     }
     
@@ -86,7 +95,7 @@ public class Engine {
         if(aSelect.equals(selectReverse)){
             
             System.out.println("");
-            System.out.println("**************************************");
+            System.out.println("**************RESULT*******************");
             System.out.println("You've selected to reverse the string.");
             System.out.println("The string you enter is: "+input);
             System.out.println("The reversed string is: "+ reverse.getData());
@@ -96,7 +105,7 @@ public class Engine {
         else if(aSelect.equals(selectShuffle)){
             
             System.out.println("");
-            System.out.println("**************************************");
+            System.out.println("**************RESULT******************");
             System.out.println("You've selected to shuffle the string.");
             System.out.println("The string you enter is: "+input);
             System.out.println("The shuffled string is: "+shuffler.getData());
