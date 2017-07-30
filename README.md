@@ -13,12 +13,12 @@ Main method is at : ArrayMaipulator/src/arraymaniulator/Main.java <br />
 7.ArrayShufflerTest.java <br />
 
 #Highlights <br />
-1.Use abstract super classe and polymorphic method call to concrete classes <br />
-2.A separate Engine class to handle program logics such as: <br />
-  <pre> 
-  a. User interaction<br />
-  b. Getting input<br />
-  c. Display output<br />
+<pre>
+1.Use abstract super classe and polymorphic method call to concrete classes 
+2.A separate Engine class to handle program logics such as:
+  a. User interaction
+  b. Getting input
+  c. Display output
   d. Instantiating objects of data classes
-  e. Interact with dataclass objects<br />
-  </pre>
+  e. Interact with dataclass objects
+</pre>
