@@ -1,0 +1,2 @@
+path=src/emaildatacapture/setting.txt"
+db=
