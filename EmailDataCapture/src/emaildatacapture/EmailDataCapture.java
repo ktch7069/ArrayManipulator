@@ -47,11 +47,5 @@ public class EmailDataCapture {
 
         */
     }
-        
-        
-        
-        
-        
-    }
     
 
