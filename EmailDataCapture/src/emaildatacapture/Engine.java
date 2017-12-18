@@ -5,7 +5,7 @@
  */
 package emaildatacapture;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
 /**
  *Engine Class
@@ -14,6 +14,20 @@ import org.apache.log4j.Logger;
  * @author Trump-PC
  */
 public class Engine {
+
+    /**
+     * @return the engineInstance
+     */
+    public static Engine getEngineInstance() {
+        return engineInstance;
+    }
+
+    /**
+     * @param aEngineInstance the engineInstance to set
+     */
+    public static void setEngineInstance(Engine aEngineInstance) {
+        engineInstance = aEngineInstance;
+    }
     
     private static Engine engineInstance;
     
@@ -23,20 +37,21 @@ public class Engine {
     */
    private Engine(){}
     
+    private final String propertyFilePath ="src/emaildatacapture/setting.txt";
     public static Engine getObject(){
         
-        if(engineInstance ==null){
+        if(getEngineInstance() ==null){
             
-         engineInstance= new Engine();        
+            setEngineInstance(new Engine());        
         }
             
-         return engineInstance;   
-            
-           
+         return getEngineInstance();   
     }
     
     
     public void run(){
+        
+      DataReader reader = new DataReader(propertyFilePath);
         
       System.out.println("hooray, I am running da project");    
     }
