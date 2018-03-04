@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<b64Test>
+    
+    <!--Without Dollar Sign-->
+    <b64TestData type="maximum" sign="positive" dollarSign="false" decimalValue="9999999.99">OTk5OTk5OS45OQ==</b64TestData>
+    <b64TestData type="minimum" sign="negative" dollarSign="false" decimalValue="-9999999.99">LTk5OTk5OTkuOTk=</b64TestData>
+    <b64TestData type="zero" sign="" dollarSign="false" decimalValue="0.00">MC4wMA==</b64TestData>
+    <b64TestData type="normal" sign="positve" dollarSign="false" decimalValue="250.35">MjUwLjM1</b64TestData>
+    <b64TestData type="normal" sign="negative" dollarSign="false" decimalValue="-250.35">MjUwLjM1</b64TestData>
+    
+    
+    <!--With Dollar Sign-->
+    <b64TestData type="maximum" sign="positive" dollarSign="true" decimalValue="$9999999.99">JDk5OTk5OTkuOTk=</b64TestData>
+    <b64TestData type="minimum" sign="negative" dollarSign="true" decimalValue="$-9999999.99">JC05OTk5OTk5Ljk5</b64TestData>
+    <b64TestData type="zero" sign="" dollarSign="true" decimalValue="$0.00">JDAuMDA=</b64TestData>
+    <b64TestData type="normal" sign="positve" dollarSign="false" decimalValue="$250.35">JDI1MC4zNQ==</b64TestData>
+    <b64TestData type="normal" sign="negative" dollarSign="false" decimalValue="$-250.35">JC0yNTAuMzU</b64TestData>
+    
+    
+</b64Test>

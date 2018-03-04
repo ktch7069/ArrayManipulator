@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<lookup>
+    
+    <binaryToAscii>
+                <item>
+                    <ascii>,</ascii>
+                    <binary>00101100</binary>
+                </item>
+		<item>
+                    <ascii>-</ascii>
+                    <binary>00101101</binary>
+                </item>
+		<item>
+                    <ascii>.</ascii>
+                    <binary>00101110</binary>
+                </item>
+		<item>
+                    <ascii>/</ascii>
+                    <binary>00101111</binary>
+                </item>
+		<item>
+                    <ascii>0</ascii>
+                    <binary>00110000</binary>
+                </item>
+		<item>
+                    <ascii>1</ascii>
+                    <binary>00110001</binary>
+                </item>
+		<item>
+                    <ascii>2</ascii>
+                    <binary>00110010</binary>
+                </item>
+		<item>
+                    <ascii>3</ascii>
+                    <binary>00110011</binary>
+                </item>
+		<item>
+                    <ascii>4</ascii>
+                    <binary>00110100</binary>
+                </item>
+		<item>
+                    <ascii>5</ascii>
+                    <binary>00110101</binary>
+                </item>
+		<item>
+                    <ascii>6</ascii>
+                    <binary>00110110</binary>
+                </item>
+		<item>
+                    <ascii>7</ascii>
+                    <binary>00110111</binary>
+                </item>
+		<item>
+                    <ascii>8</ascii>
+                    <binary>00111000</binary>
+                </item>
+		<item>
+                    <ascii>9</ascii>
+                    <binary>00111001</binary>
+                </item>
+                <item>
+                    <ascii>$</ascii>
+                    <binary>00100100</binary>
+                </item>
+    </binaryToAscii>
+    
+    <b64ToBinary>
+        <item>
+            <binary>110100</binary>
+            <base64>0</base64>
+        </item>
+        <item>
+            <binary>110101</binary>
+            <base64>1</base64>
+        </item>
+        <item>
+            <binary>110110</binary>
+            <base64>2</base64>
+        </item>
+        <item>
+            <binary>110111</binary>
+            <base64>3</base64>
+        </item>
+        <item>
+            <binary>111000</binary>
+            <base64>4</base64>
+        </item>
+        <item>
+            <binary>111001</binary>
+            <base64>5</base64>
+        </item>
+        <item>
+            <binary>111010</binary>
+            <base64>6</base64>
+        </item>
+        <item>
+            <binary>111011</binary>
+            <base64>7</base64>
+        </item>
+        <item>
+            <binary>111100</binary>
+            <base64>8</base64>
+        </item>
+        <item>
+            <binary>111101</binary>
+            <base64>9</base64>
+        </item>
+        <item>
+            <binary>111110</binary>
+            <base64>+</base64>
+        </item>
+    </b64ToBinary>
+    
+
+</lookup>
